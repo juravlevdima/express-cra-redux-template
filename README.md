@@ -1,11 +1,11 @@
-##Includes:
+## Includes:
 * Backend - Express
 * Frontend - Create React App
 * Redux
 * React Router
 * Axios
 
-##In the project directory, you can run:
+## In the project directory, you can run:
 
 ### Installation
 
