@@ -4,6 +4,7 @@
 * Redux
 * React Router
 * Axios
+* TailwindCSS
 
 ## In the project directory, you can run:
 
@@ -23,5 +24,5 @@ yarn run dev
 ### Start
 
 ```Shell
-yarn run client:build && yarn run start
+yarn run start
 ```
