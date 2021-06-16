@@ -16,3 +16,6 @@ yarn-error.log*
 lerna-debug.log*
 
 build
+
+# tailwind compiled styles:
+/client/src/css/index.css
