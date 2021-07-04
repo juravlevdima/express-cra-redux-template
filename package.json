@@ -10,7 +10,7 @@
     "server": "nodemon server/server.js",
     "client": "yarn --cwd client run start",
     "client:install": "yarn --cwd client install",
-    "client:build": "yarn --cwd client run build",
+    "client:build": "cross-env NODE_ENV=production yarn --cwd client run build",
     "dev": "cross-env NODE_ENV=development concurrently \"yarn run server\" \"yarn run client\"",
     "heroku-postbuild": "yarn run client:install && yarn run client:build"
   },
