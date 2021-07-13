@@ -10,9 +10,9 @@ const server = express()
 server.use(express.json())
 server.use(cors())
 
-server.get('/api/v1/test', (req, res) => {
-  res.json({ status: 'OK' })
-})
+// -------------------delete-this-test-route------------------------
+server.get('/api/v1/test', (req, res) => res.json({ status: 'OK' }))
+// -----------------------------------------------------------------
 
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(path.resolve('client/build')))

@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="bg-indigo-600 hover:text-red-500 active:bg-indigo-800 text-white font-bold rounded-lg p-10 custom-shadow-style">
-        <p>This is main page</p>
+        <p>This is TEST page</p>
         <p>Server test: {test}</p>
       </div>
     </div>
