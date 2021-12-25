@@ -1,12 +1,15 @@
 import { createStore, compose, applyMiddleware } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 import createRootReducer from './reducers/rootReducer.js'
 
-const middleware = [thunk]
 const initialState = {}
 
-const composedEnch = compose(applyMiddleware(...middleware))
+const composeFunc = process.env.NODE_ENV === 'development' ? composeWithDevTools : compose
 
-const store = createStore(createRootReducer(), initialState, composedEnch)
+const composedEnhancers = composeFunc(applyMiddleware(thunk))
+
+const store = createStore(createRootReducer(), initialState, composedEnhancers)
+
 
 export default store

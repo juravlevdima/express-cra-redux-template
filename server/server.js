@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import path from 'path'
+import chalk from 'chalk'
 
 dotenv.config()
 const port = process.env.PORT || 8080
@@ -22,5 +23,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 server.listen(port, () => {
-  console.log(`Server has been started on http://localhost:${port}.\nPlease press CTRL + C to stop the server`)
+  console.log(chalk.yellow(`Server has been started on http://localhost:${port}.\nPlease press CTRL + C to stop the server`))
 })

@@ -4,24 +4,26 @@
 * Redux
 * React Router
 * Axios
+* Sass
 * TailwindCSS
+* Chalk
 
 ## In the project directory, you can run:
 
-### Installation
+### Installation:
 
 ```Shell
-yarn install && yarn run client:install
+yarn && yarn run client:install
 ```
 Installs the dependencies.
 
-### Development
+### Development:
 
 ```Shell
 yarn run dev
 ```
 
-### Start
+### Start:
 
 ```Shell
 yarn run client:build && yarn run start
